@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+#adminmenu .menu-icon-news .wp-menu-image:before {
+    content: "\f488";
+}
+
+#adminmenu .menu-icon-cookielawinfo .wp-menu-image:before {
+	content:"\f211";
+ 	font-family: FontAwesome;
+    font-size: 18px;
+    padding: 8px;
+}
+
+div.postarea#postdivrich{
+	display:none !important;
+}

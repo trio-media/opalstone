@@ -1,0 +1,877 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.cookieconsent-popup {
+    right: 0px;
+}
+
+
+/* edit settings dialog */
+.cookieconsent-overlay {
+    position: fixed !important;
+    z-index: 9999999 !important;
+    background: #5e6673 !important;
+    opacity: 0.7 !important;
+}
+
+.cookieconsent-dialog {
+    position: absolute;
+    display: none;
+    left: 0px;
+    width: 100%;
+    overflow: visible;
+    z-index: 9999999;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: auto;
+}
+
+.cookieconsent-dialog-content {
+    padding: 34px;
+    width: 750px;
+    font-size: 13px;
+    position: relative;
+    float: left;
+    margin: 0px;
+    top: 0px !important;
+    height: auto;
+    overflow: visible;
+    overflow-x: visible;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 38px 0 rgba(91, 104, 126, 0.7);
+    box-shadow: 0 0 38px 0 rgba(91, 104, 126, 0.7);
+}
+
+.cookieconsent-dialog-content h2 {
+    display: block;
+    font-size: 20px;
+    float: left;
+    width: 100%;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 38px;
+    color: #031409;
+    font-weight: 700;
+}
+
+.cookieconsent-dialog-content p {
+    float: left;
+    width: 100%;
+    display: block;
+    clear: both;
+    margin: -9px 0 25px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #000000;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.cookieconsent-dialog-close {
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+.cookieconsent-dialog-content h1 {
+	font-size:23px;
+	border-bottom:1px solid;
+	border-color:inherit;
+	margin:0 0 20px 0;
+	line-height:1.6em;
+}
+.cookieconsent-dialog-content .cookieconsent-logo-link {
+	position:absolute;
+	bottom:3px;
+	right:3px;
+	background-color:#efefef;
+	padding:0 5px;
+	display:block;
+}
+
+.cookieconsent-button-wrap {
+	margin:20px 0 5px;
+	text-align:right;
+}
+.cookieconsent-button-wrap button {
+	margin-left:3px;
+}
+
+.cookieconsent-level-changer {
+	overflow:visible;
+	margin:0 auto;
+	text-align:center;
+}
+.cookieconsent-level-changer a {
+	display:inline-block;
+	height:150px;
+	cursor:pointer;
+	cursor:hand;
+	position:relative;
+	border:5px solid #b5b5b5;
+	max-width:150px;
+	text-decoration:none !important;
+}
+.cookieconsent-level-changer a:hover {
+	filter: alpha(opacity=90);
+	opacity:0.9;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 180, 50, 0.3);
+	box-shadow: 0px 0px 5px 0px rgba(50, 180, 50, 0.3);
+}
+.cookieconsent-level-changer a span.cookieconsent-level-button-icon {
+	display:block;
+	position:absolute;
+	top:11px;
+	left:10%;
+	right:13%;
+	height:75px;
+}
+.cookieconsent-level-changer a span.cookieconsent-level-button-icon div {
+	display:block;
+	background-color:#d1e0e9;
+	position:absolute;
+	bottom:0px;
+	border:1px solid #fff;
+}
+
+.cookieconsent-level-changer a span.cookieconsent-level-button-title {
+	display:block;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	height:45px;
+	padding-top:10px;
+	background-color:#b5b5b5;
+	color:#fff;
+	font-size:15px;
+}
+.cookieconsent-level-changer a.activated {
+	border-color:#66a0c5;
+}
+.cookieconsent-level-changer a.activated span.cookieconsent-level-button-title {
+	background-color:#66a0c5;
+}
+.cookieconsent-level-changer a.activated span.cookieconsent-level-button-icon div.activated {
+	background-color:#66a0c5;
+}
+
+.cookieconsent-permission-panels {
+	overflow:hidden;
+	clear:both;
+	margin-top:10px;
+	border-top:1px solid #b5b5b5;
+	padding-top:10px;
+}
+.cookieconsent-permission-panel-disallowed {
+	float:left;
+	width:49%;
+}
+.cookieconsent-permission-panel-allowed {
+	float:right;
+	width:49%;
+}
+.cookieconsent-permission-panel-title {
+	font-size:16px;
+	padding:10px 15px;
+	font-weight:normal;
+	text-align:center;
+}
+.cookieconsent-permission-panels ul {
+	padding:15px;
+	margin:0;
+	list-style:circle;
+}
+.cookieconsent-permission-panels ul li {
+	padding:0 0 4px 0;
+	margin:0 0 0 20px;
+	font-size:14px;
+}
+
+/* cookies warning */
+.cookieconsent-popup {
+    position: fixed;
+    z-index: 1999;
+    right: 0px;
+    bottom: 30px;
+	width: 1120px;
+    padding: 30px 34px;
+    font-size: 13px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    z-index: 9999999;
+    border-radius: 5px !important;
+    border: none;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0 38px 0 rgba(91,104,126,0.7);
+    box-shadow: 0 0 38px 0 rgba(91,104,126,0.7);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.cookieconsent-popup .cookie-left {
+    float: left;
+    display: block;
+    width: 80%;
+    margin: -7px 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #000000;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.cookieconsent-popup .cookie-left strong {
+    color: #7ca33a;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap {
+    float: right;
+    width: 8%;
+    margin: 0px 0 0 0;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button {
+    width: 47% !important;
+    border: none;
+    position: relative;
+    height: 30px !important;
+    margin: 0 0 0px 0 !important;
+    float: left;
+    display: block;
+    text-decoration: none !important;
+    font-size: 10px;
+    background: #e56700;
+    padding: 10px 10px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:hover {
+	background:#282625;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:last-of-type {
+    width: 45px !important;
+    height: 45px !important;
+    outline: none !important;
+    padding: 0;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: #FFFFFF;
+    float: left;
+    line-height: 1.2;
+    background: #FF6129;
+    border: 1px solid transparent;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:last-of-type:hover {
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #4891a4 0%, #0d8b3f 100%);
+    background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 100%);
+    background: linear-gradient(to right, #ffffff 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4891a4', endColorstr='#0d8b3f',GradientType=1 );
+    color: #17AD53;
+    border-color: #17AD53;
+    cursor: pointer;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:last-of-type:before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 100;
+    font-size: 20px;
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0px 0 0 0;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:last-of-type span {
+	display:none !important;
+}
+
+.cookieconsent-dialog-content a.cookieconsent-toggle-magic-button {
+    margin: 7px 0 25px 0 !important;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap {
+    clear: both;
+    float: left;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap p.ui-state-highlight {
+    border: none;
+    background: none;
+    padding: 0px !important;
+    margin-bottom: 30px !important;
+    margin-top: 0px !important;
+    text-align: left !important;
+    line-height: 11px;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4891a4;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer {
+    clear: both;
+    float: left;
+    width: 100%;
+    display: block;
+    margin: 0 0 34px 0;
+    border: none;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:first-of-type {
+    position: absolute;
+    left: 396px;
+    bottom: 23px;
+    width: auto !important;
+    background: none;
+    padding: 0px;
+    border-radius: 0px !important;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:first-of-type span.ui-button-text {
+    border-radius: 0px !important;
+    line-height: 1;
+    background: none;
+    margin: 0;
+    padding: 0px;
+    text-decoration: underline !important;
+    font-size: 14px;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #4891a4;
+    font-weight: 700;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:first-of-type span.ui-button-text:hover {
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels {
+    border: none;
+    float: left;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    margin: 0 0 40px 0;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels .ui-corner-all {
+    float: left;
+    width: 48%;
+    border-radius: 0px;
+    height: auto;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels .ui-corner-all .cookieconsent-permission-panel-title {
+    border: none;
+    font-size: 14px;
+    margin-bottom: 27px;
+    text-align: left;
+    padding: 0px;
+    letter-spacing: 0;
+    width: auto;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    top: 0px;
+    position: relative;
+    line-height: 14px;
+    float: left;
+    display: block;
+    text-transform: capitalize;
+    color: #052e50;
+    font-weight: 600;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels .ui-corner-all ul {
+    float: left;
+    width: 100%;
+    border-radius: 0px;
+    background: none;
+    border: none;
+    padding: 0px;
+    list-style-type: none;
+    margin: -7px 0 0 0;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels .ui-corner-all ul li {
+    float: left;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #5e6673;
+    padding: 0 0px 0 25px;
+    font-size: 14px;
+    margin: 0 0 12px 0;
+    position: relative;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels .ui-corner-all ul li:before {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    content: "";
+    background: #4891a4;
+    width: 11px;
+    height: 11px;
+    border-radius: 0;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels .ui-corner-all:last-of-type{
+	float:right;
+}
+
+.cookieconsent-dialog-content a.ui-corner-all.cookieconsent-logo-link {
+    display: none;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all {
+    float: left;
+    width: 47% !important;
+    display: block;
+    margin: 0px !important;
+    border: none;
+    height: auto;
+    max-width: none !important;
+    text-align: left;
+    height: 50px;
+    position: relative;
+    padding-left: 70px;
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    opacity: 1;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all:hover {
+	opacity:0.6;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all:first-of-type {
+	cursor:default;
+	pointer-events:none;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all:first-of-type span.cookieconsent-level-button-icon {
+	background: #4891a4 !important;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all:after {
+    height: 26px;
+    left: 0px;
+    width: 45px;
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Pro';
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    top: 13px;
+    position: absolute;
+}
+
+/*.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all:hover:after {
+    left: 29px;
+}*/
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all.activated:after {
+    left: 0px;
+    width: 45px;
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Pro';
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    top: 13px;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all span.cookieconsent-level-button-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    background: #4891a4;
+    right: initial;
+    color: #fff;
+    opacity: 1;
+    padding: 0 0 0 50px;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all.activated span.cookieconsent-level-button-icon {
+    cursor: pointer;
+    padding: 0 0 0 50px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 30px;
+    background: #ff6129;
+    color: #fff;
+    float: left;
+    line-height: 1;
+    font-family: 'Hepta Slab',serif;
+    height: 45px;
+    width: 100%;
+    opacity: 1;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all span.cookieconsent-level-button-icon div {
+    display: none !important;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all:last-of-type {
+	float:right;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all span.cookieconsent-level-button-title {
+    width: auto;
+    background: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    top: 0px;
+    position: relative;
+    padding: 16px 0 0 0;
+    line-height: 14px;
+    float: left;
+    display: block;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.cookieconsent-edit-settings .cookieconsent-cookie-policy-link {
+    clear: both;
+    float: left;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    text-decoration: underline !important;
+    font-size: 15px;
+    border-radius: 100px;
+    color: #3c3c3c;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding: 0px;
+    line-height: 1;
+}
+
+.cookieconsent-edit-settings .cookieconsent-cookie-policy-link:hover {
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.cookieconsent-popup a.cookieconsent-cookie-policy-link, .cookieconsent-popup a.cookieconsent-magic-button-related, .cookieconsent-dialog-content a.cookieconsent-toggle-magic-button {
+    clear: both;
+    float: left;
+    width: auto;
+    display: block;
+    margin: -26px 10px 0 0;
+    text-decoration: none !important;
+    font-size: 10px;
+    background: #e56700;
+    padding: 10px 24px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cookieconsent-dialog-content a.cookieconsent-toggle-magic-button {
+	margin:0 0 0 0;
+}
+
+.cookieconsent-popup a.cookieconsent-cookie-policy-link:hover, .cookieconsent-popup a.cookieconsent-magic-button-related:hover, .cookieconsent-dialog-content a.cookieconsent-toggle-magic-button:hover {
+	background:#282625;
+}
+
+.cookieconsent-dialog-content a.cookieconsent-toggle-magic-button span.ui-icon {
+	display:none;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button span.ui-button-text {
+    float: left;
+    width: 100%;
+    display: block;
+    padding: 0px;
+    text-align: right;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button span.ui-icon {
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    background-image: none;
+    background: #eeeeee;
+    left: 0px;
+    height: 30px;
+    width: 60px;
+    border-radius: 100px;
+	display:none;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button span.ui-icon:after {
+    content: "";
+    height: 24px;
+    width: 24px;
+    display: block;
+    position: absolute;
+    left: 4px;
+    background: #282625;
+    border-radius: 100%;
+    top: 3px;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:hover span.ui-icon:after {
+	left: 31px;
+}
+
+.cookieconsent-popup a.cookieconsent-magic-button-related {
+	clear:none;
+}
+
+.cookieconsent-popup a.cookieconsent-magic-button-related .ui-icon {
+    display: none;
+}
+
+.cookieconsent-popup a.cookieconsent-cookie-policy-link:hover, .cookieconsent-popup a.cookieconsent-magic-button-related:hover {
+	background:#282625;
+}
+
+
+.cookieconsent-dialog-content .cookieconsent-dialog-close span.ui-button-text {
+    display: none;
+}
+
+.cookieconsent-dialog-content .cookieconsent-dialog-close span.ui-icon {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    display: block;
+    -webkit-filter: brightness(10) grayscale(1);
+    filter: brightness(10) grayscale(1);
+    float: left;
+    margin: -1px 0 0 7px;
+    width: 15px;
+}
+
+.cookieconsent-dialog-content .cookieconsent-dialog-close {
+	display:none;
+}
+
+.cookieconsent-dialog-content .cookieconsent-dialog-close:hover {
+	background:#282625;
+}
+
+/* magic button */
+.cookieconsent-toggle-magic-button {
+	display:block;
+	float:right;
+	margin:5px 0 10px;
+	text-decoration:underline;
+}
+.cookieconsent-toggle-magic-button .ui-icon {
+	float:left;
+	margin: 4px 2px 0 0;
+}
+.cookieconsent-magic-button-wrap {
+	display:none;
+}
+.cookieconsent-magic-button-wrap .ui-state-highlight {
+	margin:0 0 15px;
+	padding:15px;
+}
+.cookieconsent-magic-button-wrap iframe {
+	height:137px;
+	width:100%;
+}
+
+/* policy links */
+.cookieconsent-popup .cookieconsent-cookie-policy-link {
+	display:block;
+	float:left;
+	clear:both;
+	margin:5px 0 10px;
+	text-decoration:underline;
+}
+.cookieconsent-edit-settings .cookieconsent-cookie-policy-link {
+}
+
+
+/* style amends and overwrites */
+.cookieconsent-popup a.cookieconsent-magic-button-related {
+    display: none;
+}
+
+.cookieconsent-popup a.cookieconsent-cookie-policy-link {
+    line-height: 1;
+    background: none;
+    margin: 0;
+    padding: 0px;
+    text-decoration: underline !important;
+    font-size: 14px;
+    text-transform: none;
+    color: #4891a4;
+    font-weight: 700;
+}
+
+.cookieconsent-popup a.cookieconsent-cookie-policy-link:hover {
+    background: none;
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.cookieconsent-dialog-content a.cookieconsent-toggle-magic-button {
+	display:none;
+}
+
+/* SEARCH FOR PHONES */
+/* Media Queries XS - SM */
+@media only screen
+and (max-width: 767px) {
+
+.cookieconsent-popup .cookie-left {
+    width: 100%;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap {
+    float: right;
+    width: 100%;
+    margin: 18px 0px 6px;
+}
+
+.cookieconsent-popup a.cookieconsent-cookie-policy-link, .cookieconsent-popup a.cookieconsent-magic-button-related {
+    width: 100%;
+    text-align: center;
+    margin: 12px 0 0px 0;
+}
+
+.cookieconsent-dialog {
+    height: 100vh;
+    top: 0%;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.cookieconsent-dialog-content {
+    width: 100%;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-level-changer a.ui-corner-all {
+    width: 100% !important;
+    margin: 4px 0 11px !important;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels .ui-corner-all {
+    float: left;
+    width: 100%;
+    border-radius: 0px;
+    height: auto;
+    margin: 0 0 14px 0;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap .cookieconsent-permission-panels {
+    margin: 0 0 15px 0;
+}
+
+.cookieconsent-dialog-content .cookieconsent-level-changer-wrap p.ui-state-highlight {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+
+}
+
+/* SEARCH FOR IPAD PORTRAITS */
+/* Media Queries SM - MD */
+@media only screen
+and (min-width : 768px)
+and (max-width : 991px) {
+
+.cookieconsent-popup .cookie-left {
+    width: 61%;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap {
+    width: 31%;
+}
+
+.cookieconsent-popup a.cookieconsent-cookie-policy-link, .cookieconsent-popup a.cookieconsent-magic-button-related {
+    margin: 20px 10px 0 0;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button {
+    width: 100% !important;
+    margin: 0 0 10px 0 !important;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap button:last-of-type {
+    float: right;
+    margin: 0 0 0 0 !important;
+}
+
+}
+
+/* SEARCH FOR IPAD LANDSCAPE */
+/* Media Queries MD - LG */
+@media only screen
+and (min-width : 992px)
+and (max-width : 1200px) {
+
+.cookieconsent-popup .cookie-left {
+    width: 59%;
+}
+
+.cookieconsent-popup .cookieconsent-button-wrap {
+    width: 38%;
+}
+
+
+
+
+}
