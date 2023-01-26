@@ -23,7 +23,7 @@
 			
 			<div class="container h-100">
 				<div class="row vertical">
-					<div class="col-12 col-lg-9">
+					<div class="col-12 col-lg-10">
 						<h1><?php echo the_sub_field('title'); ?></h1>
 
 						<?php echo the_sub_field('text'); ?>
