@@ -785,10 +785,23 @@ li#menu-item-364 > ul.sub-menu a {
 	text-shadow: 0 0 21px #000000;
 }
 
+.slides__heading--mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1199px) {
     .slider-main h1 {
         font-size: 36px;
         line-height: 46px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slides__heading--desktop {
+        display: none;
+    }
+    .slides__heading--mobile {
+        display: block;
     }
 }
 
