@@ -801,7 +801,13 @@ li#menu-item-364 > ul.sub-menu a {
         display: none;
     }
     .slides__heading--mobile {
-        display: block;
+        width: min-intrinsic;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+        display: table-caption;
+        display: -ms-grid;
+        -ms-grid-columns: min-content;
     }
 }
 
