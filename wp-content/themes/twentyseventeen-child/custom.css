@@ -2635,13 +2635,19 @@ div#slick-slide00 ul.slick-dots li:nth-child(1) button, div#slick-slide01 ul.sli
     width: 100%;
     height: 215px;
     overflow: hidden;
+    position: relative;
 }
 
 .coloured-cta-block .image-container img {
-    float: left;
-    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
     height: 100%;
-    max-width: none;
+    object-fit: cover;
+    font-family: "object-fit: cover";
 }
 
 .coloured-cta-block .image-background {

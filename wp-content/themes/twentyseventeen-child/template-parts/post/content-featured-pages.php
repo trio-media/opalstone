@@ -17,7 +17,7 @@
 					<div class="col-12 col-sm-6 col-md-4">
 						<a href="<?php echo the_permalink(); ?>" class="coloured-cta-container <?php echo the_title(); ?>">
 							<div class="image-container">
-								<img src="<?php echo $postImage[0];?>" alt="<?php echo $alt; ?>" class="horizontal" />
+								<img src="<?php echo $postImage[0];?>" alt="<?php echo $alt; ?>" class="" />
 							</div>
 
 							<span class="title horizontal">
